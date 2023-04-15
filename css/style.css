@@ -1,0 +1,70 @@
+@import <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+body {
+    background-color: black;
+        
+}
+.postcard {
+    width: 600px;
+    height: 450px;
+    background-color: white;
+}
+
+.postcard >.postcard-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.postcard >.postcard-header > h1{
+    text-shadow: 2px 2px 5px gray;
+}
+
+.postcard >.postcard-header > img {
+    width: 100px;
+    height: 100px;
+}
+
+.postcard >.postcard-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.postcard > .postcard-body >.postcard-body-left > {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.postcard >.postcard-body>.postcard-body-right > input[type =text]
+{   border: 0;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    font-family: "Roboto";
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 20px;
+}
+
+.postcard>.postcard-footer {
+    height: 70px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.postcard>.postcard.footer button{
+    height: 30px;
+    width:30;
+    color: white;
+    background-color: cadetblue;
+    border-radius: 10px;
+    border: 0;
+}
